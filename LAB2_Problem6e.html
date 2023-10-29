@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <style type="text/css">
+        label{
+            width: 100px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <div id="form">
+    <form name="register" method="post" action="#">
+    <center><h2>ĐĂNG KÝ THÀNH VIÊN</h2></center>
+        <fieldset>
+            <legend><h4>Thông tin cá nhân</h4></legend>
+            <label for="name">Họ và tên:</label>
+            <input type="text" name="ten" maxlength="100">
+            <p><label for="ngaysinh">Ngày sinh:</label>
+            <select name="dob">
+                    <option value="value 1" selected = "selected">1</option>
+                    <option value="value 2">2</option>
+                    <option value="value 3">3</option>
+                    <option value="value 4">4</option>
+                    <option value="value 5">5</option>
+                    <option value="value 6">6</option>
+                    <option value="value 7">7</option>
+                    <option value="value 8">8</option>
+                    <option value="value 9">9</option>
+                    <option value="value 10">10</option>
+                    <option value="value 11">11</option>
+                    <option value="value 12">12</option>
+            </select>
+            <label for="thang">Tháng</label>
+            <select name="months">
+                <option value="value 1" selected = "selected">1</option>
+                    <option value="value 2">2</option>
+                    <option value="value 3">3</option>
+                    <option value="value 4">4</option>
+                    <option value="value 5">5</option>
+                    <option value="value 6">6</option>
+                    <option value="value 7">7</option>
+                    <option value="value 8">8</option>
+                    <option value="value 9">9</option>
+                    <option value="value 10">10</option>
+                    <option value="value 11">11</option>
+                    <option value="value 12">12</option>
+            </select>
+            <label for="nam">Năm</label>
+            <input type="text" name="year" maxlength="100" size="8px">
+            </p>
+            <p><label for="gender">Giới tính:</label>
+            <input type="radio" name="male" value="Nam" checked>Nam
+            <input type = "radio" name="female" value="Nữ">Nữ 
+        </p>
+        <p>
+            <label for="address">Địa chỉ:</label>
+            <textarea name="address" maxlength="1000" cols="30" rows="5"></textarea>
+        </p>
+        <p>
+            <label for="phonenum">Điện thoại:</label>
+            <input type="text" maxlength="100" size="35px" height="15px">
+        </p>
+        <p>
+            <label for="email">Email: </label>
+           <input type="email" name="email" maxlength="100" size="35px" required>
+        </p>
+        </fieldset>
+        <fieldset>
+            <legend><h4>Thông tin đăng nhập</h4></legend>
+            <label for="tendangnhap">Tên đăng nhập:</label>
+            <input type="text" maxlength="100" required>
+            <p>
+                <label for="matkhau">Mật khẩu: </label>
+                <input type="password" name="password" required>
+            </p>
+            <p>
+                <label for="nhaplaimatkhau">Nhập lại mật khẩu: </label>
+                <input type="password" name="passwordconfirm" required>
+            </p>
+        </fieldset>
+        <center><button type="submit">Đăng kí</button>
+        <button type="reset">Hủy</button></center>
+    </div>
+</form>
+</body>
+</html>
